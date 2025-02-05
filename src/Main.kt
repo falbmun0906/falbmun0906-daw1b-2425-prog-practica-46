@@ -83,11 +83,23 @@ fun main() {
 
     //TODO: Servir café en las tazas... siempre que haya café en la cafetera y en el orden cafetera1, cafetera2 y cafetera3.
 
-
+    for (taza in tazas) {
+        for (cafetera in cafeteras) {
+            cafetera.servirTaza(taza)
+        }
+    }
 
     println("**********************************************")
     //TODO: Mostrar por pantalla el contenido de las 3 cafeteras y las tazas.
 
+    println("\nCAFETERAS: \n")
+    for (cafetera in cafeteras) {
+        println(cafetera)
+    }
 
+    println("\nTAZAS: \n")
+    for (taza in tazas) {
+        println(taza)
+    }
 
 }
